@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İnteractive Pricing Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/interactive.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-header">
+      <h1>Simple, traffic-based pricing</h1>
+      <h4>Sign-up for our 30-day trial. <br class="mobile-active"> No credit card required. </h4>
+    </div>
+    <div class="card">
+      <div class="d-grid">
+        <h3 id="pageView">100K PAGEVIEWS</h3>
+        <div class="input-group">
+          <input type="range" min="10" max="200" step="10" value="100" id="pageViewRange" class="slider">
+        </div>
+        <div class="payment">
+          <p id="pay">$16.00</p>
+          <span>/ month</span>
+        </div>
+      </div>
+       <div class="billing">
+        <div class="monthly-bill">
+          <h6>Monthly Billing</h6>
+          <input type="checkbox" id="discount">
+        </div>
+        <div class="yearly-bill">
+          <h6>Yearly Billing</h6>
+          <p>-25% <span class="desktop-active">discount</span></p>
+        </div>
+       </div>
+       <div class="benefits">
+        <ul class="benefits-list">
+          <li>Unlimited websites</li>
+          <li>100% data ownership </li>
+          <li>Email reports</li>
+        </ul>
+        <a href="#">Start my trial</a>
+       </div>
+
+    </div>
+  </div>
+
+  <script src="assets/js/interactive.js"></script>
+</body>
+</html>
